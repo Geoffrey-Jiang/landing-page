@@ -9,7 +9,7 @@ body {
     background-color: #1F2937;
 }
 
-.header, .intro, .cards, .signup, .footer {
+.header, .intro, .cards, .signup, .footer, .quote {
     padding: 0 150px;
 }
 
@@ -21,6 +21,7 @@ body {
 }
 #icon {
     width: 36px;
+    height: 36px;
     border-radius: 50%;
     background-color: white;
     border: 4px solid white;
@@ -33,6 +34,13 @@ body {
 
 a {
     font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Intro block styling */
@@ -49,7 +57,7 @@ a {
     font-weight: bolder;
 }
 
-#desc, a {
+#desc, a, .footer {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -68,15 +76,61 @@ button {
 #introimg {
     height: 250px;
     width: auto;
+    border: none;
 }
 
 /* Cards styling */
+#cards_header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+}
 
+.cards {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+img {
+    width: 128px;
+    height: 128px;
+    border-radius: 16px;
+    border: 2px solid #3882F6;
+}
 
 /* Quote styling */
+.quote_container {
+    width: 400px;
+}
 
 .quote {
+    display: flex;
+    justify-content: center;
     background-color: #E5E7EB;
+    padding: 16px 0;
+}
+
+#quote {
+    font-size: 36px;
+    font-style: italic;
+}
+
+#quoter {
+    font-size: 24px;
+    text-align: right;
+    font-weight: bold;
 }
 
 /* Call to action */
+
+
