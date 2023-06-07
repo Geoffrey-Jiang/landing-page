@@ -9,7 +9,7 @@ body {
     background-color: #1F2937;
 }
 
-.header, .intro, .cards, .signup, .footer, .quote {
+.header, .intro, .cards, .footer, .quote {
     padding: 0 150px;
 }
 
@@ -55,6 +55,11 @@ a {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: bolder;
+    margin: 4px;
+}
+
+#desc {
+    margin: 4px;
 }
 
 #desc, a, .footer {
@@ -71,6 +76,9 @@ button {
 
 .info {
     height: 250px;
+    width: 400px;
+    flex-shrink: 0;
+
 }
 
 #introimg {
@@ -106,6 +114,7 @@ img {
     height: 128px;
     border-radius: 16px;
     border: 2px solid #3882F6;
+    object-fit: cover;
 }
 
 /* Quote styling */
@@ -133,4 +142,44 @@ img {
 
 /* Call to action */
 
+.signup {
+    height: auto;
+    display: flex;
+    padding: 24px;
+    justify-content: center;
 
+}
+.call {
+    border-radius: 24px;
+    padding: 24px;
+    width: 600px;
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#call, #signup {
+    color: white;
+    margin: 4px;
+}
+
+#call {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#signup {
+    font-size: 18px;
+}
+
+button {
+    max-height: 48px;
+}
